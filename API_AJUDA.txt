@@ -1,0 +1,62 @@
+API AJUDA
+
+Passos:
+
+1 - criar banco de dados com o nome 'db_dgp' - user pass ('root','')
+2 - execute o comando no console 'npm install' para instalar os módulos
+3 - execute o comando no console 'npm run dev' para executar
+3 - fazer chamadas de exercícios, eu usei postman
+
+Desafio Back-end - Gerenciar pessoas
+
+1 - Listar e/ou filtrar todas as pessoas - GET - http://localhost:3000/api/gerenciarPessoas
+
+2 - Cadastrar uma nova pessoa - POST - http://localhost:3000/api/gerenciarPessoas
+
+{
+"nome": "Matias Rivero",
+"cpf": "718.867.311-01",
+"telefone": "5522992399923",
+"email": "rivero.matias.sebastian@gmail.com"
+}
+
+3 - Visualizar os dados de uma pessoa - GET - http://localhost:3000/api/gerenciarPessoas/718.867.311-01
+
+4 - Alterar os dados de uma pessoa - PATCH - http://localhost:3000/api/gerenciarPessoas
+
+{
+"nome": "Matias Sebastian Rivero",
+"cpf": "718.867.311-01",
+"telefone": "5522992399923",
+"email": "rivero.matias.sebastian@gmail.com"
+}
+
+5 - Excluir uma pessoa - DELETE - http://localhost:3000/api/gerenciarPessoas/718.867.311-01
+
+6 - Listar todos os endereços de uma pessoa - GET - http://localhost:3000/api/gerenciarPessoas/enderecos/718.867.311-01
+
+7 - Adicionar um endereço vinculado a uma pessoa - POST - http://localhost:3000/api/gerenciarPessoas/enderecos
+
+{
+"id_endereco": "4s97kt5ev31ht6cj30o",
+"cpf": "718.867.311-01",
+"logradouro": "Rua Nova Pero",
+"numero": "17564",
+"bairro": "Jardim Esperanca",
+"cidade": "Cabo Frio",
+"estado": "RJ"
+}
+
+8 - Alterar um endereço - PATCH - http://localhost:3000/api/gerenciarPessoas/enderecos
+
+{
+"id_endereco": "4s97kt5ev31ht6cj30o",
+"cpf": "718.867.311-01",
+"logradouro": "Rua Crimelda Pimenta",
+"numero": "140564",
+"bairro": "Ponte Ambrosio",
+"cidade": "Cabo Frio",
+"estado": "RJ"
+}
+
+9 - Excluir um endereço - DELETE - http://localhost:3000/api/gerenciarPessoas/enderecos/4s97kt5ev31ht6cj30o
